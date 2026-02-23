@@ -92,14 +92,14 @@ export const Calendar: React.FC<CalendarProps> = ({
               className={`
                 relative flex flex-col items-center justify-center h-10 w-full rounded-full text-sm font-medium transition-all
                 ${!isCurrentMonth ? "text-zinc-700" : ""}
-                ${isSelected ? "bg-emerald-500 text-white" : "hover:bg-zinc-800 text-zinc-300"}
-                ${isToday && !isSelected ? "text-emerald-400" : ""}
+                ${isSelected ? "bg-primary-500 text-white" : "hover:bg-zinc-800 text-zinc-300"}
+                ${isToday && !isSelected ? "text-primary-400" : ""}
               `}
             >
               <span>{format(day, "d")}</span>
               {hasWorkout && (
                 <div
-                  className={`absolute bottom-1 w-1 h-1 rounded-full ${isSelected ? "bg-white" : "bg-emerald-500"}`}
+                  className={`absolute bottom-1 w-1 h-1 rounded-full ${isSelected ? "bg-white" : "bg-primary-500"}`}
                 />
               )}
             </button>

@@ -53,7 +53,7 @@ export const ActiveWorkoutScreen: React.FC<{ onFinish: () => void }> = ({
             addSession(newSession);
             setActiveWorkoutId(newSession.id);
           }}
-          className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-3 px-8 rounded-full transition-colors mb-4"
+          className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-8 rounded-full transition-colors mb-4"
         >
           Start Freestyle Workout
         </button>
@@ -238,7 +238,7 @@ export const ActiveWorkoutScreen: React.FC<{ onFinish: () => void }> = ({
         <h1 className="text-lg font-bold">{session.name}</h1>
         <button
           onClick={handleFinish}
-          className="text-emerald-400 font-medium hover:text-emerald-300"
+          className="text-primary-400 font-medium hover:text-primary-300"
         >
           Finish
         </button>
@@ -257,7 +257,7 @@ export const ActiveWorkoutScreen: React.FC<{ onFinish: () => void }> = ({
               className="bg-zinc-900 rounded-2xl p-4 border border-zinc-800"
             >
               <div className="flex justify-between items-center mb-4">
-                <h3 className="font-bold text-lg text-emerald-400">
+                <h3 className="font-bold text-lg text-primary-400">
                   {exercise.name}
                 </h3>
                 <button className="text-zinc-500 hover:text-zinc-300">
@@ -280,7 +280,7 @@ export const ActiveWorkoutScreen: React.FC<{ onFinish: () => void }> = ({
                 {sessionEx.sets.map((set, setIndex) => (
                   <div
                     key={set.id}
-                    className={`rounded-xl p-2 transition-colors ${set.completed ? "bg-emerald-500/10" : "bg-zinc-800/50"}`}
+                    className={`rounded-xl p-2 transition-colors ${set.completed ? "bg-primary-500/10" : "bg-zinc-800/50"}`}
                   >
                     {set.type === "normal" ? (
                       <div className="grid grid-cols-12 gap-2 items-center">
@@ -299,7 +299,7 @@ export const ActiveWorkoutScreen: React.FC<{ onFinish: () => void }> = ({
                                 Number(e.target.value),
                               )
                             }
-                            className="w-full bg-zinc-800 text-center rounded-lg py-2 text-sm font-mono focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                            className="w-full bg-zinc-800 text-center rounded-lg py-2 text-sm font-mono focus:outline-none focus:ring-1 focus:ring-primary-500"
                             placeholder="0"
                           />
                         </div>
@@ -315,7 +315,7 @@ export const ActiveWorkoutScreen: React.FC<{ onFinish: () => void }> = ({
                                 Number(e.target.value),
                               )
                             }
-                            className="w-full bg-zinc-800 text-center rounded-lg py-2 text-sm font-mono focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                            className="w-full bg-zinc-800 text-center rounded-lg py-2 text-sm font-mono focus:outline-none focus:ring-1 focus:ring-primary-500"
                             placeholder="0"
                           />
                         </div>
@@ -331,7 +331,7 @@ export const ActiveWorkoutScreen: React.FC<{ onFinish: () => void }> = ({
                             }
                             className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${
                               set.completed
-                                ? "bg-emerald-500 text-white"
+                                ? "bg-primary-500 text-white"
                                 : "bg-zinc-700 text-zinc-400 hover:bg-zinc-600"
                             }`}
                           >
@@ -407,7 +407,7 @@ export const ActiveWorkoutScreen: React.FC<{ onFinish: () => void }> = ({
                                   }
                                   className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${
                                     set.completed
-                                      ? "bg-emerald-500 text-white"
+                                      ? "bg-primary-500 text-white"
                                       : "bg-zinc-700 text-zinc-400 hover:bg-zinc-600"
                                   }`}
                                 >
@@ -450,7 +450,7 @@ export const ActiveWorkoutScreen: React.FC<{ onFinish: () => void }> = ({
 
         <button
           onClick={() => setShowAddExercise(true)}
-          className="w-full bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-500 font-medium py-4 rounded-2xl transition-colors flex items-center justify-center space-x-2 border border-emerald-500/20"
+          className="w-full bg-primary-500/10 hover:bg-primary-500/20 text-primary-500 font-medium py-4 rounded-2xl transition-colors flex items-center justify-center space-x-2 border border-primary-500/20"
         >
           <Plus size={20} />
           <span>Add Exercise</span>
@@ -477,7 +477,7 @@ export const ActiveWorkoutScreen: React.FC<{ onFinish: () => void }> = ({
                 placeholder="Search exercises..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-zinc-900 text-white rounded-full py-2 pl-10 pr-4 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                className="w-full bg-zinc-900 text-white rounded-full py-2 pl-10 pr-4 focus:outline-none focus:ring-1 focus:ring-primary-500"
                 autoFocus
               />
             </div>
@@ -496,7 +496,7 @@ export const ActiveWorkoutScreen: React.FC<{ onFinish: () => void }> = ({
                     {exercise.muscleGroup}
                   </p>
                 </div>
-                <Plus size={20} className="text-emerald-500" />
+                <Plus size={20} className="text-primary-500" />
               </button>
             ))}
             {filteredExercises.length === 0 && (

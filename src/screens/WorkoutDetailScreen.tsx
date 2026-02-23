@@ -16,7 +16,7 @@ export const WorkoutDetailScreen: React.FC<{
       <div className="flex flex-col h-full bg-black text-white p-4">
         <button
           onClick={onBack}
-          className="text-emerald-500 mb-4 flex items-center"
+          className="text-primary-500 mb-4 flex items-center"
         >
           <ArrowLeft size={20} className="mr-1" /> Back
         </button>
@@ -30,7 +30,7 @@ export const WorkoutDetailScreen: React.FC<{
       <div className="sticky top-0 z-10 bg-black/80 backdrop-blur-md p-4 border-b border-zinc-800 flex items-center">
         <button
           onClick={onBack}
-          className="text-emerald-500 mr-4 p-1 hover:bg-zinc-800 rounded-full transition-colors"
+          className="text-primary-500 mr-4 p-1 hover:bg-zinc-800 rounded-full transition-colors"
         >
           <ArrowLeft size={24} />
         </button>
@@ -54,7 +54,7 @@ export const WorkoutDetailScreen: React.FC<{
               key={sessionEx.id}
               className="bg-zinc-900 rounded-2xl p-4 border border-zinc-800"
             >
-              <h3 className="font-bold text-lg text-emerald-400 mb-4">
+              <h3 className="font-bold text-lg text-primary-400 mb-4">
                 {index + 1}. {exercise.name}
               </h3>
 

@@ -35,7 +35,7 @@ export const TemplatesScreen: React.FC<{
         </div>
         <button
           onClick={() => setIsCreating(true)}
-          className="p-2 bg-zinc-800 hover:bg-zinc-700 rounded-full transition-colors text-emerald-400"
+          className="p-2 bg-zinc-800 hover:bg-zinc-700 rounded-full transition-colors text-primary-400"
         >
           <Plus size={24} />
         </button>
@@ -98,7 +98,7 @@ export const TemplatesScreen: React.FC<{
 
             <button
               onClick={() => onStartWorkout(template.id)}
-              className="w-full bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-500 font-medium py-3 rounded-xl transition-colors flex items-center justify-center space-x-2"
+              className="w-full bg-primary-500/10 hover:bg-primary-500/20 text-primary-500 font-medium py-3 rounded-xl transition-colors flex items-center justify-center space-x-2"
             >
               <Play size={18} fill="currentColor" />
               <span>Start Routine</span>

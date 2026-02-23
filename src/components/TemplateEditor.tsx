@@ -77,7 +77,7 @@ export const TemplateEditor: React.FC<TemplateEditorProps> = ({
         </h1>
         <button
           onClick={handleSave}
-          className="text-emerald-400 font-medium hover:text-emerald-300"
+          className="text-primary-400 font-medium hover:text-primary-300"
         >
           Save
         </button>
@@ -93,7 +93,7 @@ export const TemplateEditor: React.FC<TemplateEditorProps> = ({
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="e.g. Push Day"
-            className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-1 focus:ring-emerald-500"
+            className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-1 focus:ring-primary-500"
           />
         </div>
 
@@ -137,7 +137,7 @@ export const TemplateEditor: React.FC<TemplateEditorProps> = ({
 
           <button
             onClick={() => setShowAddExercise(true)}
-            className="w-full bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-500 font-medium py-3 rounded-xl transition-colors flex items-center justify-center space-x-2 border border-emerald-500/20"
+            className="w-full bg-primary-500/10 hover:bg-primary-500/20 text-primary-500 font-medium py-3 rounded-xl transition-colors flex items-center justify-center space-x-2 border border-primary-500/20"
           >
             <Plus size={20} />
             <span>Add Exercise</span>
@@ -165,7 +165,7 @@ export const TemplateEditor: React.FC<TemplateEditorProps> = ({
                 placeholder="Search exercises..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-zinc-900 text-white rounded-full py-2 pl-10 pr-4 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                className="w-full bg-zinc-900 text-white rounded-full py-2 pl-10 pr-4 focus:outline-none focus:ring-1 focus:ring-primary-500"
                 autoFocus
               />
             </div>
@@ -184,7 +184,7 @@ export const TemplateEditor: React.FC<TemplateEditorProps> = ({
                     {exercise.muscleGroup}
                   </p>
                 </div>
-                <Plus size={20} className="text-emerald-500" />
+                <Plus size={20} className="text-primary-500" />
               </button>
             ))}
             {filteredExercises.length === 0 && (

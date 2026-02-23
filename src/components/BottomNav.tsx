@@ -29,7 +29,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({
               onClick={() => onChange(tab.id)}
               className={`flex flex-col items-center justify-center w-full h-full space-y-1 ${
                 isActive
-                  ? "text-emerald-500"
+                  ? "text-primary-500"
                   : "text-zinc-500 hover:text-zinc-300"
               }`}
             >

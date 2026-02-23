@@ -49,7 +49,7 @@ export const HomeScreen: React.FC<{
             {isSameDay(selectedDate, new Date()) && (
               <button
                 onClick={() => onNavigate("workout")}
-                className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-2 px-6 rounded-full transition-colors inline-flex items-center space-x-2"
+                className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-6 rounded-full transition-colors inline-flex items-center space-x-2"
               >
                 <Play size={18} fill="currentColor" />
                 <span>
