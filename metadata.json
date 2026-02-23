@@ -1,0 +1,5 @@
+{
+  "name": "Gym Tracker",
+  "description": "An Android-style app to track exercises, sets, and workouts with a calendar view.",
+  "requestFramePermissions": []
+}
